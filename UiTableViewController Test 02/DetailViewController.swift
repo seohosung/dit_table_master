@@ -10,7 +10,6 @@ class DetailViewController: UIViewController,UITableViewDelegate,UITableViewData
     var telNum: String = ""
     var locationName: String = ""
     var menu: String = ""
-    //김준범
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,40 +37,32 @@ class DetailViewController: UIViewController,UITableViewDelegate,UITableViewData
         
         //        if indexPath.row == 0 {
         //            cell.textLabel?.text = "주소 :" + loca2
+        
         //            return cell
         //        } else if indexPath.row == 1 {
+        
         //            cell.textLabel?.text = "전화번호 :" + telNum2
         //            return cell
+        
         //        } else {
         //            cell.textLabel?.text = "메뉴 :" + menu
         //            return cell
         //        }
-        //if문 사용
         
         
         switch indexPath.row  {
         case 0:
+            
             cell.textLabel?.text = " 주소 : " + locationName
             return cell
+            
          case 1:
-            cell.textLabel?.text = " 전화번호 : " + telNum
+            cell.textLabel?.text = " 번호 : " + telNum
             return cell
+            
          default:
             cell.textLabel?.text = " 메뉴 : " + menu
             return cell
         }
     }
-   
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

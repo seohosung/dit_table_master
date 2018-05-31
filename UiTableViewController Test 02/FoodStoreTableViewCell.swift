@@ -2,7 +2,7 @@
 //  FoodStoreTableViewCell.swift
 //  UiTableViewController Test 02
 //
-//  Created by D7702_09 on 2018. 5. 21..
+//  Created by D7702_30 on 2018. 5. 30..
 //  Copyright © 2018년 lse. All rights reserved.
 //
 
